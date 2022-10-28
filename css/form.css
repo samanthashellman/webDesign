@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+/* form styling */
+html * {
+	line-height: 1.625;
+	font-family: arial;
+	background-color:rgb(215, 229, 240);
+}
+
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	float:left;	
+	width: 100%;
+}
+
+label {
+	margin-right: .3em;
+	width: 7.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: purple !important;
+}
+
+#formcol1 input.reqfield {
+	background:#FF9;
+}
+
+	
+
+#formcol1 li {   
+	list-style:none;
+}
+
+
+
+/* end of form css */
+	
